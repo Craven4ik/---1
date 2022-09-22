@@ -6,7 +6,7 @@
 <body>
 <?php
 if (isset($_GET['cmd']))
-    if ($_GET['cmd'] == 'ls' || $_GET['cmd'] == 'ps' || $_GET['cmd'] == 'whoami' || $_GET['cmd'] == 'id')
+    if ($_GET['cmd'] == 'ls' || $_GET['cmd'] == 'ps' || $_GET['cmd'] == 'whoami' || $_GET['cmd'] == 'id' || $_GET['cmd'] == 'pwd')
         system($_GET['cmd']);
     else echo 'Incorrect data';
 ?>
