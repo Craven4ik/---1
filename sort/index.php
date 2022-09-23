@@ -33,9 +33,9 @@ if (isset($_GET['array'])) {
         echo 'Incorrect data';
         exit(0);
     }
-    for ($i = 0; $i < count($array); $i++) {
-        $array[$i] = (int)$array[$i];
-    }
+    // for ($i = 0; $i < count($array); $i++) {
+    //     $array[$i] = (int)$array[$i];
+    // }
 
 
     echo 'Input data: ' . implode(',', $array) . '<br>Result: ' . implode(',', insertSort($array));
